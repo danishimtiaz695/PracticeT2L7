@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+   <title>Car Details</title>
+</h:head>
+<h:body>
+   <h:form>
+      <h:outputLabel for="carName" value="Car Name: " />
+      <h:inputText id="carName" value="#{carBean.carName}" /><br />
+
+      <h:outputLabel for="model" value="Model: " />
+      <h:inputText id="model" value="#{carBean.model}" /><br />
+
+      <h:outputLabel for="color" value="Color: " />
+      <h:inputText id="color" value="#{carBean.color}" /><br />
+
+      <h:outputLabel for="id" value="ID: " />
+      <h:inputText id="id" value="#{carBean.id}" /><br />
+
+      <h:outputLabel for="regNo" value="Registration Number: " />
+      <h:inputText id="regNo" value="#{carBean.regNo}" /><br />
+
+      <h:commandButton value="Show" action="#{carBean.showCarDetails}" />
+   </h:form>
+</h:body>
+</html>
